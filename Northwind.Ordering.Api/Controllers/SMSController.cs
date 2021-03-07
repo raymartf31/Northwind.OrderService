@@ -19,7 +19,7 @@ namespace Northwind.Ordering.Api.Controllers
         public async Task<IActionResult> SendSMS()
         {
             // Twilio test account only allow 1 number registered to received an SMS.
-            await _smsService.Send("+639495048987", "Hi Oli!");
+            await _smsService.Send("+48987", "Hi Oli!");
 
             return Ok(true);
         }
