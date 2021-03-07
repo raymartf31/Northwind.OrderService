@@ -18,7 +18,7 @@ namespace Northwind.Ordering.Api.Controllers
         [HttpPost("sendsms")]
         public async Task<IActionResult> SendSMS()
         {
-            // Twilio test account only allow 1 number registered to received an SMS.
+            // Twilio test account only allow 1 number registered to receive an SMS.
             await _smsService.Send("+48987", "Hi Oli!");
 
             return Ok(true);
